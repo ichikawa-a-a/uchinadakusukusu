@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>内灘町の「食」をPR - 内灘餅・砂丘の真珠・ミルク王国</title>
+<style>
+  /* カラー設定 */
+  :root {
+    --primary-color: #196DAC;
+    --secondary-color: #186845;
+  }
+  /* リセットとベース */
+  body {
+    margin: 0;
+    font-family: "Yu Gothic", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    background-color: #f9fbfc;
+    color: #333;
+  }
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.05em;
+    user-select: none;
+  }
+  main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  section {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(25, 109, 172, 0.15);
+    padding: 1.5rem 1.5rem 2rem;
+    margin-bottom: 2.5rem;
+    box-sizing: border-box;
+    /* ふんわり効果 */
+    filter: drop-shadow(0 3px 8px rgba(25, 104, 68, 0.1));
+  }
+  h2 {
+    border-bottom: 4px solid var(--secondary-color);
+    color: var(--primary-color);
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  .image-placeholder {
+    width: 100%;
+    height: 180px;
+    background-color: #dde9f1;
+    border: 2px dashed var(--primary-color);
+    border-radius: 8px;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    user-select: none;
+  }
+  p {
+    line-height: 1.65;
+    font-size: 1rem;
+    color: #3a3a3a;
+  }
+  footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+    color: #666;
+    background-color: #f0f5f7;
+    border-top: 1px solid #d2dce3;
+    user-select: none;
+  }
+  @media (max-width: 600px) {
+    header {
+      font-size: 1.4rem;
+      padding: 1.25rem 1rem;
+    }
+    main {
+      padding: 0 0.75rem;
+    }
+    .image-placeholder {
+      height: 140px;
+    }
+  }
+
+  /* 驚きオーバーレイ */
+  #surpriseOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    z-index: 9999;
+    cursor: pointer;
+    user-select: none;
+    text-shadow: 0 0 15px rgba(0,0,0,0.7);
+    animation: pulse 1.5s ease-in-out infinite alternate;
+  }
+  #surpriseOverlay span {
+    padding: 0.75rem 1.5rem;
+    border: 5px double white;
+    border-radius: 18px;
+    background-color: rgba(0,0,0,0.15);
+  }
+  @keyframes pulse {
+    0% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 25px rgba(255, 255, 255, 0.4);}
+    100% { text-shadow: 0 0 25px rgba(255, 255, 255, 1), 0 0 45px rgba(255, 255, 255, 0.8);}
+  }
+</style>
+</head>
+<body>
+<div id="surpriseOverlay" role="alert" aria-live="assertive" aria-label="サプライズメッセージ">
+  <span>あっ！</span>
+</div>
+
+<header>
+  内灘町の「食」をご紹介します
+</header>
+<main>
+  <section id="uchinadamochi">
+    <h2>内灘餅</h2>
+    <div class="image-placeholder" aria-label="内灘餅の画像スペース">No images</div>
+    <p>砂丘地で穫れる落花生をふんだんに入れた、優しい甘さの「ピーナッツ餅」は、内灘町の西荒屋地区で昔から子どもたちに愛されてきたおやつです。</p>
+    <p>昔ながらの味を絶やさないよう、西荒屋地区の地域おこし団体「西荒屋営農促進会」のメンバーが、「内灘餅」として、ひとつひとつ丁寧に手作業で製造・販売しています。ピーナッツも餅米もMade in 内灘。風味豊かな食感と優しい甘さが特徴です。</p>
+  </section>
+
+  <section id="sakyunoshinju">
+    <h2>砂丘の真珠（らっきょう）</h2>
+    <div class="image-placeholder" aria-label="砂丘の真珠の画像スペース">No images</div>
+    <p>内灘砂丘で採れた3年子らっきょうは、ひと粒ひと粒、手作業で丁寧に皮を取り酢漬けしており、シャキシャキとした歯ごたえが特徴です。</p>
+    <p>「おいCまち内灘」は、無農薬・非化学肥料を使用し、町内の高校生や高齢者の方とも連携して加工・販売を行っています。</p>
+  </section>
+
+  <section id="milkkingdom">
+    <h2>ミルク王国</h2>
+    <div class="image-placeholder" aria-label="ミルク王国の画像スペース">No images</div>
+    <p>内灘町は日本海に面し、河北潟や内灘砂丘が広がる町です。河北潟干拓地では酪農が営まれ、令和5年度には石川県の牛乳生産量の61%を内灘町産が占めています。</p>
+    <p>「ミルク王国ウチナダ」では、内灘町のミルクでおもてなしする店を「ミルク王国の店」として認定し、各店がオリジナル商品を提供しています。</p>
+  </section>
+</main>
+<footer>
+  © 2026 内灘町「食」PRサイト
+</footer>
+
+<script>
+  // オーバーレイをクリックで非表示にする処理
+  const overlay = document.getElementById('surpriseOverlay');
+  overlay.addEventListener('click', () => {
+    overlay.style.display = 'none';
+  });
+</script>
+</body>
+</html>
